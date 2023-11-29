@@ -1,0 +1,4 @@
+﻿  3.c
+C:\Users\User\source\repos\3\3\3.c(17,1): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\source\repos\3\3\3.c(18,1): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  3.vcxproj -> C:\Users\User\source\repos\3\Debug\3.exe

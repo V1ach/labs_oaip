@@ -1,0 +1,4 @@
+﻿  4.3.c
+C:\Users\bande\source\repos\4.3\4.3\4.3.c(9,18): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\bande\source\repos\4.3\4.3\4.3.c(10,1): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  4.3.vcxproj -> C:\Users\bande\source\repos\4.3\Debug\4.3.exe

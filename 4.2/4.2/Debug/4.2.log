@@ -1,0 +1,4 @@
+﻿  4.2.c
+C:\Users\bande\source\repos\4.2\4.2\4.2.c(14,15): warning C4013: 'time' undefined; assuming extern returning int
+C:\Users\bande\source\repos\4.2\4.2\4.2.c(67,11): warning C4013: '_getch' undefined; assuming extern returning int
+  4.2.vcxproj -> C:\Users\bande\source\repos\4.2\Debug\4.2.exe

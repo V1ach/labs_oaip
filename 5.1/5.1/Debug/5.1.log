@@ -1,0 +1,11 @@
+﻿  5.1.c
+C:\Users\bande\source\repos\5.1\5.1\5.1.c(31,28): warning C4477: 'scanf_s' : format string '%f' requires an argument of type 'float *', but variadic argument 1 has type 'int'
+C:\Users\bande\source\repos\5.1\5.1\5.1.c(43,44): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\bande\source\repos\5.1\5.1\5.1.c(58,21): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\bande\source\repos\5.1\5.1\5.1.c(63,14): warning C4133: 'function': incompatible types - from 'float *' to 'int *'
+C:\Users\bande\source\repos\5.1\5.1\5.1.c(83,11): warning C4013: 'output' undefined; assuming extern returning int
+C:\Users\bande\source\repos\5.1\5.1\5.1.c(88,6): error C2084: function 'void input(int *,int)' already has a body
+C:\Users\bande\source\repos\5.1\5.1\5.1.c(15): message : see previous definition of 'input'
+C:\Users\bande\source\repos\5.1\5.1\5.1.c(92,21): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\bande\source\repos\5.1\5.1\5.1.c(110,6): error C2371: 'output': redefinition; different basic types
+C:\Users\bande\source\repos\5.1\5.1\5.1.c(111): fatal error C1075: '{': no matching token found

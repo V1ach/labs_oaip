@@ -1,0 +1,13 @@
+﻿  7.c
+C:\Users\bande\source\repos\7\7.c(104,25): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\bande\source\repos\7\7.c(174,23): warning C4474: 'scanf_s' : too many arguments passed for format string
+C:\Users\bande\source\repos\7\7.c(174,23): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+C:\Users\bande\source\repos\7\7.c(177,23): warning C4474: 'scanf_s' : too many arguments passed for format string
+C:\Users\bande\source\repos\7\7.c(177,23): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+C:\Users\bande\source\repos\7\7.c(202,23): warning C4474: 'scanf_s' : too many arguments passed for format string
+C:\Users\bande\source\repos\7\7.c(202,23): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+C:\Users\bande\source\repos\7\7.c(212,17): warning C4473: 'scanf_s' : not enough arguments passed for format string
+C:\Users\bande\source\repos\7\7.c(212,17): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+C:\Users\bande\source\repos\7\7.c(212,17): message : the missing variadic argument 2 is required by format string '%[^\n]'
+C:\Users\bande\source\repos\7\7.c(212,17): message : this argument is used as a buffer size
+  7.vcxproj -> C:\Users\bande\source\repos\7\Debug\7.exe

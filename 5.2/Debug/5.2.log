@@ -1,6 +1,1 @@
-﻿  5.2.c
-C:\Users\bande\source\repos\5.2\5.2.c(12,9): warning C4101: 'i': unreferenced local variable
-C:\Users\bande\source\repos\5.2\5.2.c(36,18): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\bande\source\repos\5.2\5.2.c(34,17): warning C4101: 'j': unreferenced local variable
-C:\Users\bande\source\repos\5.2\5.2.c(34,14): warning C4101: 'i': unreferenced local variable
-  5.2.vcxproj -> C:\Users\bande\source\repos\5.2\Debug\5.2.exe
+﻿  5.2.vcxproj -> C:\Users\bande\source\repos\5.2\Debug\5.2.exe

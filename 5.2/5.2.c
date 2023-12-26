@@ -9,7 +9,7 @@ void output(int** arr, int n);
 void main()
 {
 	int** arr;
-	int n, i, j;
+	int n, i, j, k;
 
 	printf("Введите количество строк и столбцов матрицы:\n");
 	scanf_s("%d", &n);
@@ -18,10 +18,16 @@ void main()
 		arr[j] = (int*)malloc(sizeof(int) * n);
 
 	input(arr, n);
-
-	for (int i = 0; i < n; i++)
-		*(*(arr + n - i - 1) + i) = 0;
-
+	int c;
+	for (int i = 0; i < n - 1; i++)
+	{
+		for (c = 0; c < n - i - 1; c++)
+		{
+			k = arr[i + c + 1][n - 1 - i];
+			arr[i + c][n - 1 - i] = k;
+		}
+	}
+	
 	output(arr, n);
 	for (int j = 0; j < n; j++)
 		free(arr[j]);
@@ -54,7 +60,7 @@ void input(int** arr, int n)
 void output(int** arr, int n)
 {
 	printf("\n");
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < n-1; i++)
 	{
 		for (int j = 0; j < n; j++)
 			printf("> a[%d][%d]= %d\t", i + 1, j + 1, *(*(arr + i) + j));

@@ -1,5 +1,7 @@
 ﻿  5.3.c
-C:\Users\bande\source\repos\5.3\5.3.c(53,18): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\bande\source\repos\5.3\5.3.c(51,17): warning C4101: 'j': unreferenced local variable
-C:\Users\bande\source\repos\5.3\5.3.c(51,14): warning C4101: 'i': unreferenced local variable
+C:\Users\bande\source\repos\5.3\5.3.c(14,35): warning C4101: 'k': unreferenced local variable
+C:\Users\bande\source\repos\5.3\5.3.c(14,38): warning C4101: 'g': unreferenced local variable
+C:\Users\bande\source\repos\5.3\5.3.c(67,18): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\bande\source\repos\5.3\5.3.c(65,17): warning C4101: 'j': unreferenced local variable
+C:\Users\bande\source\repos\5.3\5.3.c(65,14): warning C4101: 'i': unreferenced local variable
   5.3.vcxproj -> C:\Users\bande\source\repos\5.3\Debug\5.3.exe

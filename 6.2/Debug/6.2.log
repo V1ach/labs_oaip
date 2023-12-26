@@ -1,0 +1,5 @@
+﻿  6.2.c
+C:\Users\bande\source\repos\6.2\6.2.c(9,15): warning C4013: 'time' undefined; assuming extern returning int
+C:\Users\bande\source\repos\6.2\6.2.c(7,20): warning C4101: 'j': unreferenced local variable
+C:\Users\bande\source\repos\6.2\6.2.c(7,17): warning C4101: 'i': unreferenced local variable
+  6.2.vcxproj -> C:\Users\bande\source\repos\6.2\Debug\6.2.exe

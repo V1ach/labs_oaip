@@ -1,1 +1,10 @@
-﻿  5.2.vcxproj -> C:\Users\bande\source\repos\5.2\Debug\5.2.exe
+﻿  5.2.c
+C:\Users\bande\source\repos\5.2\5.2.c(21,17): warning C4020: 'output': too many actual parameters
+C:\Users\bande\source\repos\5.2\5.2.c(30,19): warning C4020: 'output': too many actual parameters
+C:\Users\bande\source\repos\5.2\5.2.c(12,15): warning C4101: 'k': unreferenced local variable
+C:\Users\bande\source\repos\5.2\5.2.c(12,9): warning C4101: 'i': unreferenced local variable
+C:\Users\bande\source\repos\5.2\5.2.c(41,18): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\bande\source\repos\5.2\5.2.c(39,17): warning C4101: 'j': unreferenced local variable
+C:\Users\bande\source\repos\5.2\5.2.c(39,14): warning C4101: 'i': unreferenced local variable
+C:\Users\bande\source\repos\5.2\5.2.c(60,1): warning C4029: declared formal parameter list different from definition
+  5.2.vcxproj -> C:\Users\bande\source\repos\5.2\Debug\5.2.exe

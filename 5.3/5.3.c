@@ -1,102 +1,89 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
 #include <time.h>
-#include <malloc.h>
+#include <conio.h>
 
-void input(int** arr, int n, int m);
-void output(int** arr, int n, int m);
+void input(int* a, int val)
+{
+	while (scanf_s("%d", a) == 0 || getchar() != '\n' || *a < val)
+	{
+		printf("> Неверный ввод!\n");
+		rewind(stdin);
+	}
+}
+
+void create(int** arr, int* arr_l, int lines)
+{
+	srand(time(NULL));
+	printf(">> Введите кол-во элементов на линии: \n");
+	for (int i = 0; i < lines; i++)
+	{
+		int temp;
+		input(&temp, 1);
+		arr[i] = malloc(sizeof(int) * (temp + 1));
+		arr_l[i] = temp;
+	}
+	int tmp = 0;
+	for (int i = 0; i < lines; i++)
+	{
+		for (int j = 0; j < arr_l[tmp]; j++)
+		{
+			arr[i][j] = rand() % 10;
+		}
+		arr[i][arr_l[tmp]] = -100;
+		tmp++;
+	}
+}
+
+void print_arr(int** arr, int* arr_l, int lines)
+{
+	printf("\n");
+	int tmp = 0;
+	for (int i = 0; i < lines; i++)
+	{
+		for (int j = 0; j < arr_l[tmp] + 1; j++)
+		{
+			printf("%d ", arr[i][j]);
+		}
+		printf("\n");
+		tmp++;
+	}
+	printf("\n");
+}
+
+void dublicate(int** arr, int* arr_l, int lines)
+{
+	int tmp = 0;
+	for (int i = 0; i < lines; i++)
+	{
+		for (int j = 0; j < arr_l[tmp]; j++)
+		{
+			if (i % 2 == 0 && arr[i][j] % 2)
+			{
+				arr_l[tmp]++;
+				arr[i] = realloc(arr[i], sizeof(int) * (arr_l[tmp] + 1));
+				for (int c = arr_l[tmp]; c > j; c--)
+				{
+					arr[i][c] = arr[i][c - 1];
+				}
+				j++;
+			}
+		}
+		tmp++;
+	}
+}
 
 void main()
 {
 	int** arr;
-	int n,count = 0,  m, i, j , h=0, k, g;
-
-	printf("Введите количество строк и столбцов матрицы:\n");
-	scanf_s("%d%d", &n, &m);
-	arr = (int**)malloc(sizeof(int*) * n);
-
-	for (i = 0; i < n; i++)
-		arr[i] = (int*)malloc(sizeof(int) * m);
-
-	input(arr, n, m);
-	for (i = 0; i < n; i++)
-	{
-		arr[i] = (int*)realloc(arr[i], sizeof(int) * (m + 1));
-		if (arr[i][m - 1] != -100)
-		{
-			printf("Неверный вввод, во всех строках последнее число должно быть -100");
-			break;
-		}
-		else
-		{
-			if (i % 2 == 1)
-			{
-				int mm = 0;
-				for (j = 0; j < m; j++)
-				{
-					
-					if (arr[i][j] % 2 == 1 && mm == 0)
-					{
-						count = j;
-						mm = 1;
-						for (j = m + 1; j > count + 1; j--)
-						{
-							int tmp = arr[i][j];
-							arr[i][j] = arr[i][j - 1];
-							arr[i][j - 1] = tmp;
-						}
-						arr[i][count + 1] = arr[i][count];
-					}
-				}
-			}
-		}
-	}
-	output(arr, n, m + 1);
-	for (j = 0; j < n; j++)
-		free(arr[j]);
-	free(arr);
+	int lines;
+	printf(">> Введите кол-во линий:\n");
+	input(&lines, 1);
+	arr = malloc(sizeof(int*) * lines);
+	int* arr_l = malloc(sizeof(int) * lines);
+	create(arr, arr_l, lines);
+	print_arr(arr, arr_l, lines);
+	dublicate(arr, arr_l, lines);
+	print_arr(arr, arr_l, lines);
 	_getch();
-}
-
-void input(int** arr, int n, int m)
-{
-	int choice, i, j;
-
-	srand(time(NULL));
-	printf(">> 1 - Случайные числа\n>> 2 - Ручной ввод (ввод по числу на строку)\n");
-	scanf_s("%d", &choice);
-	switch (choice)
-	{
-	case 1:
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < m - 1; j++) {
-				arr[i][j] = rand() % 20 - 2;
-			}
-			arr[i][m - 1] = -100;
-		}
-		for (int i = 0; i < n; i++)
-		{
-			for (int j = 0; j < m; j++)
-				printf(" a[%d][%d]= %d\t", i + 1, j + 1, arr[i][j]);
-			printf("\n");
-		}
-		break;
-	case 2:
-		for (int i = 0; i < n; i++)
-			for (int j = 0; j < m; j++)
-				scanf_s("%d ", &arr[i][j]);
-		break;
-	}
-}
-
-void output(int** arr, int n, int m)
-{
-	printf("\n");
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = 0; j < m; j++)
-			if(arr[i][j] > -1000) 	printf(" a[%d][%d]= %d\t", i + 1, j + 1, arr[i][j]);	
-		printf("\n");
-	}
 }

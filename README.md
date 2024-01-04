@@ -1,3 +1,4 @@
 # lap_oaip
 
-Made with Visual Studio 2019
+Made in Visual Studio 2019
+Tested in Windows Terminal (new app)

@@ -1,9 +1,0 @@
-﻿  7.c
-C:\Users\bande\source\repos\7-8\7.c(114,25): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\bande\source\repos\7-8\7.c(190,21): warning C4474: 'scanf' : too many arguments passed for format string
-C:\Users\bande\source\repos\7-8\7.c(190,21): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
-C:\Users\bande\source\repos\7-8\7.c(193,21): warning C4474: 'scanf' : too many arguments passed for format string
-C:\Users\bande\source\repos\7-8\7.c(193,21): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
-C:\Users\bande\source\repos\7-8\7.c(217,21): warning C4474: 'scanf' : too many arguments passed for format string
-C:\Users\bande\source\repos\7-8\7.c(217,21): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
-  7.vcxproj -> C:\Users\bande\source\repos\7-8\Debug\7.exe

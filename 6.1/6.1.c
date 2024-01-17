@@ -15,7 +15,7 @@ void random(int** array, int size)
     srand(time(NULL));
     printf("> Случайно сгенерированный массив:\n");
     for (int i = 0; i < size; i++) {
-        (*array)[i] = rand() % 100;
+        (*array)[i] = rand() % 100 -20;
         printf("%d ", (*array)[i]);
     }
     printf("\n");
